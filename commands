@@ -138,3 +138,8 @@ passwd                 # изменить пароль текущего поль
 sudo passwd username   # изменить пароль другого пользователя (нужны права root)
 passwd -l username     # заблокировать пользователя (не сможет войти)
 passwd -u username     # разблокировать пользователя
+
+21. groupadd — используется для создания новой группы пользователей в Linux.
+Примеры:
+sudo groupadd developers          # создать группу "developers"
+sudo groupadd -g 1500 designers   # создать группу с конкретным GID 1500
