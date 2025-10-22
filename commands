@@ -50,3 +50,14 @@ mv folder1 /home/user/archive/              # переместит всю пап
 mv -i file.txt /somewhere/                  # c подтверждением, чтобы терминал спрашивал перед заменой, флаг -i = interactive (спрашивает «перезаписать?»).
 mv -f file.txt /somewhere/                  # принудительная замена без вопросов, флаг -f = force, перезапишет без предупреждения.
 
+9. cp – (copy) используется для копирования файлов и папок.
+Примеры:
+cp file.txt /home/user/backup/      # копирует файл file.txt в папку /home/user/backup/
+cp file.txt newfile.txt             # копирует файл и даёт ему новое имя
+cp file1.txt file2.txt /home/user/  # копирует несколько файлов в указанную папку
+cp -r folder_name /home/user/       # копирует папку и всё её содержимое (-r = recursive)
+cp -i file.txt /home/user/          # спросит перед перезаписью существующего файла (-i = interactive)
+cp -p file.txt /home/user/          # сохраняет дату, права и владельца (-p = preserve)
+cp -v file.txt /home/user/          # показывает, что копируется (-v = verbose)
+cp -rpv my_folder /backup/          # копирует всё с сохранением атрибутов и прогрессом
+
