@@ -41,3 +41,12 @@ rm -i file.txt                # терминал спросит: remove regular 
 
 7. clear -  используется в терминале для очистки экрана.
 
+8. mv — (move) используется для перемещения и переименования файлов и папок.
+Примеры
+mv file.txt /home/user/Documents/           # переместит file.txt в папку /home/user/Documents
+mv oldname.txt newname.txt                  # переименование файла
+mv file1.txt file2.txt /home/user/backup/   # перемещение нескольких файлов
+mv folder1 /home/user/archive/              # переместит всю папку со всем содержимым
+mv -i file.txt /somewhere/                  # c подтверждением, чтобы терминал спрашивал перед заменой, флаг -i = interactive (спрашивает «перезаписать?»).
+mv -f file.txt /somewhere/                  # принудительная замена без вопросов, флаг -f = force, перезапишет без предупреждения.
+
