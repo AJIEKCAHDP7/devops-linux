@@ -143,3 +143,10 @@ passwd -u username     # разблокировать пользователя
 Примеры:
 sudo groupadd developers          # создать группу "developers"
 sudo groupadd -g 1500 designers   # создать группу с конкретным GID 1500
+
+22. usermod — используется для изменения параметров существующего пользователя в Linux.
+Примеры:
+sudo usermod -l newname oldname       # изменить имя пользователя
+sudo usermod -d /home/newdir -m alex  # сменить домашнюю директорию и переместить файлы
+sudo usermod -aG sudo alex            # добавить пользователя alex в группу sudo
+sudo usermod -s /bin/zsh alex         # изменить оболочку пользователя на zsh
