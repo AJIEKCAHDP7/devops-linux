@@ -124,3 +124,10 @@ lsmem --output=RANGE,SIZE,STATE   # выводит конкретные коло
 sudo adduser alex                   # создаёт нового пользователя с именем alex
 sudo adduser alex sudo              # добавляет пользователя alex в группу sudo (дает права администратора)
 sudo adduser alex developers        # добавляет пользователя alex в группу developers
+
+19. su — (substitute user) используется для смены пользователя в терминале, обычно для перехода к root.
+Примеры:
+su                               # переключается на пользователя root (потребует пароль root)
+su alex                          # переключается на пользователя alex
+su -                             # переключается на root с полной средой (environment) root
+su - alex                        # переключается на пользователя alex с полной средой
