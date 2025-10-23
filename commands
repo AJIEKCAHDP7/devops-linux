@@ -156,3 +156,8 @@ sudo usermod -s /bin/zsh alex         # изменить оболочку пол
 sudo chown alex file.txt              # сменить владельца файла на alex
 sudo chown alex:developers file.txt   # сменить владельца и группу
 sudo chown -R alex:alex /var/www      # рекурсивно сменить владельца и группу для всех файлов
+
+24. chgrp — (change group) используется для изменения группы-владельца файла или каталога.
+Примеры:
+sudo chgrp developers file.txt        # изменить группу файла на developers
+sudo chgrp -R www-data /var/www       # рекурсивно сменить группу для папки /var/www
