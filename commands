@@ -150,3 +150,9 @@ sudo usermod -l newname oldname       # изменить имя пользова
 sudo usermod -d /home/newdir -m alex  # сменить домашнюю директорию и переместить файлы
 sudo usermod -aG sudo alex            # добавить пользователя alex в группу sudo
 sudo usermod -s /bin/zsh alex         # изменить оболочку пользователя на zsh
+
+23. chown — (change owner) используется для изменения владельца и группы файла или директории.
+Примеры:
+sudo chown alex file.txt              # сменить владельца файла на alex
+sudo chown alex:developers file.txt   # сменить владельца и группу
+sudo chown -R alex:alex /var/www      # рекурсивно сменить владельца и группу для всех файлов
